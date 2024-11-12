@@ -1,0 +1,60 @@
+<!-- Start Team Skills
+	=========================================== -->
+    <section class="team-skills section-sm" id="skills">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- section title -->
+                <div class="col-xl-6 col-lg-8">
+                    <div class="title text-center">
+                        <h2>Our Skills</h2>
+                        <p>Expertise across web, mobile, UI/UX, graphic design, and OpenAI integration. We transform
+                            ideas into innovative digital solutions, delivering excellence at every step.</p>
+                        <div class="border"></div>
+                    </div>
+                </div>
+                <!-- /section title -->
+            </div>
+    
+            <div class="row justify-content-between">
+                <div class="col-md-5">
+                    <div class="team-skills-content">
+                        <h2 class="mb-3">Simple To Start</h2>
+                        <p>
+                            We are a full-scale software development firm that knows the value of lasting relationships and
+                            can combine focused detail-oriented action with long-term strategic thinking. Our team of
+                            skilled professionals is dedicated to delivering high-quality software solutions tailored to
+                            your specific needs. We leverage the latest technologies and methodologies to ensure your
+                            projects are not only successful but also sustainable. With a commitment to innovation and
+                            excellence, we partner with you to drive your business forward.</p>
+                        <a href="contact.html" class="btn btn-main mt-20">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="progress-block">
+                        <ul>
+                            {% for skill in skills %}
+                            <li class="mb-3">
+                                <span>{{skill.name}}</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: {{ skill.percentage }}%;"
+                                        aria-valuenow="{{ skill.percentage }}" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+    
+                    </div>
+                </div>
+            </div> <!-- End row -->
+            <div class="row">
+                <div class="col-md-12 mt-4">
+                    <div id="clients-slider" class="clients-logo-slider">
+                        {% for client in clients %}
+                        <img loading="lazy" src="{{client.logo.url}}" alt="">
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End container -->
+    </section> <!-- End section -->

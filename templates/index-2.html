@@ -1,0 +1,221 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<div>
+
+	<div class="hero-slider">
+		<div class="slider-item th-fullpage hero-area"
+			style="background-image: url(../static/images/slider/slider-bg-2.jpg);">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h1 data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">Making Your Ideas
+							<br> Possible</h1>
+						<p data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".5">
+							A Pioneer in solving clients<br> Real World IT issues.
+						</p>
+						<a data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".8" class="btn btn-main"
+							href="{% url 'contact' %}">Explore Us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slider-item th-fullpage hero-area"
+			style="background-image: url(../static/images/slider/slider-bg-2.jpg);">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h1 data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">Experience the <br>
+							Revolution</h1>
+						<p data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".5">Cutting Edge Features
+							& right solution<br>for your Enterprise Resource planner needs</p>
+						<a data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".8" class="btn btn-main"
+							href="{% url 'contact' %}">Explore Us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!--
+Start About Section
+==================================== -->
+<section class="about" id="about">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xl-6 col-lg-8">
+				<!-- section title -->
+				<div class="title text-center">
+					<h2>About Us</h2>
+					<p>Welcome to Tintosh Technologies, a beacon of innovation and excellence in the tech industry. With a dedication to pushing boundaries, we transform ideas into cutting-edge
+						solutions. Join us in shaping the future of technology at Tintosh Technologies.</p>
+					<div class="border"></div>
+				</div>
+				<!-- /section title -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 mb-5 mb-lg-0">
+				<img loading="lazy" src="{% static 'images/about-us.jpg' %}	" class="img-fluid" alt="">
+			</div>
+			<div class="col-lg-6">
+				<p>We specialize in crafting innovative designs that seamlessly merge with cutting-edge technology. Our
+					solutions are meticulously tailored to meet the unique needs and aspirations of our clients. Through
+					our expertise and creativity, we bring ideas to life, transforming concepts into impactful
+					realities. With a passion for pushing boundaries, we continuously explore new horizons in design and
+					technology. Together, we embark on a journey of innovation, shaping the future of technology-driven
+					experiences.</p>
+				<br>
+				<ul class="feature-list">
+					<li> <i class="tf-ion-android-checkmark-circle"></i> WEB DEVELOPMENT</li>
+					<li> <i class="tf-ion-android-checkmark-circle"></i> MOBILE APP DEVELOPMENT</li>
+					<li> <i class="tf-ion-android-checkmark-circle"></i> OPEN AI INTEGRATIONS</li>
+					<li> <i class="tf-ion-android-checkmark-circle"></i> UI/UX DESIGNING</li>
+					<li> <i class="tf-ion-android-checkmark-circle"></i> GRAPHIC DESIGN</li>
+					<li> <i class="tf-ion-android-checkmark-circle"></i> SEO & DIGITAL MARKETING</li>
+				</ul>
+				<a href="{% url 'contact' %}" class="btn btn-main mt-20">Learn More</a>
+			</div>
+		</div> <!-- End row -->
+	</div> <!-- End container -->
+</section> <!-- End section -->
+<!--
+Start Call To Action
+==================================== -->
+<section class="call-to-action-2 section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h3>High-grade enterprise software development services to corporate customers.
+
+					Using state of the art software tools and practices to always deliver more than expected
+					in a fun and dependable manner.</h3>
+			</div>
+		</div> <!-- End row -->
+	</div> <!-- End container -->
+</section> <!-- End section -->
+{% include 'services-sub.html' %}
+
+<!--
+Start Call To Action
+==================================== -->
+<section class="call-to-action section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xl-6 col-lg-8 text-center">
+				<h2>Let's Create Something Together</h2>
+				<p>Transforming Ideas into Innovative Digital Solutions. 
+					Turning your vision into reality with innovative digital solutions. Partner with us to achieve something remarkable.</p>
+				<a href="{% url 'contact' %}" class="btn btn-main">Contact Us</a>
+			</div>
+		</div> <!-- End row -->
+	</div> <!-- End container -->
+</section> <!-- End section -->
+
+{% include 'skills.html' %}
+
+{% include 'counter.html'%}
+
+
+{% include 'work.html'%}
+
+{% include 'team-sub.html'%}
+
+{% include 'testominals.html' %}
+<!--
+<!--Start Contact Us
+	=========================================== -->
+<section class="contact-us" id="contact">
+	<div class="container">
+		<div class="row justify-content-center">
+			<!-- section title -->
+			<div class="col-xl-6 col-lg-8">
+				<div class="title text-center">
+					<h2>Get In Touch</h2>
+					<p>Connect with Tintosh Technologies today and let's shape the future together.</p>
+					<div class="border"></div>
+				</div>
+			</div>
+			<!-- /section title -->
+		</div>
+		<div class="row">
+			<!-- Contact Details -->
+			<div class="contact-details col-md-6 ">
+				<h3 class="mb-3">Contact Details</h3>
+				<p>Enter your details and someone from our team will reach out to find a time to connect with you.</p>
+				<ul class="contact-short-info mt-4">
+					<li class="mb-3">
+						<i class="tf-ion-ios-home"></i>
+						<span>{{company.address}}</span>
+					</li>
+					<li class="mb-3">
+						<i class="tf-ion-android-phone-portrait"></i>
+						<span>Phone: {{company.phone}}</span>
+					</li>
+					<li>
+						<i class="tf-ion-android-mail"></i>
+						<span>Email: {{company.email}}</span>
+					</li>
+				</ul>
+				<!-- Footer Social Links -->
+				<div class="social-icon">
+					<ul>
+						<li><a href="{{company.facebook_profile}}" target="_blank"><i
+									class="tf-ion-social-facebook"></i></a></li>
+						<li><a href="{{company.insta_profile}}" target="_blank"><i
+									class="tf-ion-social-instagram"></i></a></li>
+						<li><a href="{{company.linkedin_profile}}" target="_blank"><i
+									class="tf-ion-social-linkedin-outline" target="_blank"></i></a></li>
+					</ul>
+				</div>
+				<!--/. End Footer Social Links -->
+			</div>
+			<!-- / End Contact Details -->
+
+			<!-- Contact Form -->
+			<div class="contact-form col-md-6 ">
+				<form id="contact-form" method="post" role="form">
+					{% csrf_token %}
+					<div class="form-group mb-4">
+						{{ form.name.label_tag }}
+						{{ form.name }}
+					</div>
+
+					<div class="form-group mb-4">
+						{{ form.email.label_tag }}
+						{{ form.email }}
+					</div>
+
+					<div class="form-group mb-4">
+						{{ form.subject.label_tag }}
+						{{ form.subject }}
+					</div>
+
+					<div class="form-group mb-4">
+						{{ form.message.label_tag }}
+						{{ form.message }}
+					</div>
+
+					<div id="cf-submit">
+						<input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+					</div>
+				</form>
+
+			</div>
+			<!-- ./End Contact Form -->
+
+		</div> <!-- end row -->
+	</div> <!-- end container -->
+</section> <!-- end section -->
+
+<!--================================
+=            Google Map            =
+=================================-->
+<div class="google-map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.449178832981!2d74.23055087663089!3d31.429298851634044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919050c9e574955%3A0x91225bae78f26c82!2sZeeAn%20Technologies!5e0!3m2!1sen!2s!4v1717077025397!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<!--====  End of Google Map  ====-->
+</div>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initialize" async defer></script> -->
+{% endblock %}

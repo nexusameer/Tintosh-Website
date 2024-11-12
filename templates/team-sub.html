@@ -1,0 +1,65 @@
+<!-- Start Our Team
+		=========================================== -->
+		<section class="team" id="team">
+			<div class="container">
+				<div class="row justify-content-center">
+					<!-- section title -->
+					<div class="col-xl-6 col-lg-8">
+						<div class="title text-center ">
+							<h2>Our Team</h2>
+							<p>Value-based upscaling is at the heart of Tintosh's work environment. From learning to
+								implementation, our developers and tech experts stay ahead in their professional game.</p>
+							<div class="border"></div>
+						</div>
+					</div>
+					<!-- /section title -->
+				</div>
+				<div class="row">
+		
+					<!-- team member -->
+					{% for team in teams %}
+					<div class="col-lg-4 col-md-6">
+						<div class="team-member text-center">
+							<div class="member-photo">
+								<!-- member photo -->
+								<img loading="lazy" class="img-fluid" src="{{team.image.url}}" alt="Meghna">
+								<!-- /member photo -->
+		
+								<!-- member social profile -->
+								<div class="mask">
+									<ul class="clearfix">
+										{% if team.facebook_profile %}
+										<li><a href="{{team.facebook_profile}}" target="_blank"><i class="tf-ion-social-facebook"></i></a></li>
+										{% endif %}
+										{% if team.twitter_profile %}
+										<li><a href="{{team.twitter_profile}}" target="_blank"><i class="tf-ion-social-twitter"></i></a></li>
+										{% endif %}
+										{% if team.github_profile %}
+										<li><a href="{{team.github_profile}}" target="_blank"><i class="tf-ion-social-github-outline"></i></a>
+										</li>
+										{% endif %}
+										{% if team.linkedin_profile %}
+										<li><a href="{{team.linkedin_profile}}" target="_blank"><i class="tf-ion-social-linkedin-outline"></i></a>
+										</li>
+										{% endif %}
+									</ul>
+								</div>
+								<!-- /member social profile -->
+							</div>
+		
+							<!-- member name & designation -->
+							<div class="member-content">
+								<h3>{{team.name}}</h3>
+								<span>{{team.role}}</span>
+								<p>{{team.bio}}</p>
+							</div>
+							<!-- /member name & designation -->
+		
+						</div>
+					</div>
+					{% endfor %}
+					<!-- end team member -->
+		
+				</div> <!-- End row -->
+			</div> <!-- End container -->
+		</section> <!-- End section -->

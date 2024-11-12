@@ -1,0 +1,63 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<div>
+
+<section class="single-page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Our Team</h2>
+				<ol class="breadcrumb header-bradcrumb justify-content-center">
+					<li class="breadcrumb-item"><a href="index-2.html" class="text-white">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Our Team</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--
+Start About Section
+==================================== -->
+<section class="about" id="about">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xl-6 col-lg-8">
+				<!-- section title -->
+				<div class="title text-center">
+					<h2>About Us</h2>
+					<p>Welcome to Tintosh Technologies, a beacon of innovation and excellence in the tech industry. With a dedication to pushing boundaries, we transform ideas into cutting-edge solutions. Join us in shaping the future of technology at Tintosh Technologies.</p>
+					<div class="border"></div>
+				</div>
+				<!-- /section title -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 mb-5 mb-lg-0">
+				<img loading="lazy" src="{% static 'images/about-us.jpg'%}" class="img-fluid" alt="">
+			</div>
+			<div class="col-lg-6">
+				<p>At Tintosh Technologies, we're the architects of digital transformation, pioneering solutions that redefine what's possible. Our suite of services encompasses everything you need to thrive in the digital landscape. From bespoke web and application development to captivating UI/UX design, we craft experiences that captivate audiences and drive results. Our expertise extends to website design that seamlessly integrates form and function, elevating your online presence to new heights.
+
+					But we don't just stop at the surface – we delve deep into the realms of artificial intelligence with our OpenAI integrations, unlocking the power of machine intelligence to supercharge your operations. And because visibility is paramount, our SEO services ensure your brand shines brightly amidst the digital noise, attracting and retaining your target audience.
+					
+					What truly sets us apart is our relentless pursuit of excellence and innovation. We're not just here to meet your needs; we're dedicated to exceeding them, every step of the way. Partner with us, and you'll gain more than just a service provider – you'll have a trusted ally committed to realizing your vision and driving your success forward. Let's join forces and create a future where technology knows no bounds.</p>
+				<h4>We Provide</h4>
+				<ul class="feature-list">
+					<li> <i class="tf-ion-android-checkmark-circle"></i> Web Development</li>
+					<li> <i class="tf-ion-android-checkmark-circle"></i> Mobile App Development</li>
+					<li> <i class="tf-ion-android-checkmark-circle"></i> Open AI Integrations</li>
+					<li> <i class="tf-ion-android-checkmark-circle"></i> UI/UX Design</li>
+					<li> <i class="tf-ion-android-checkmark-circle"></i> Graphic Design</li>
+					<li> <i class="tf-ion-android-checkmark-circle"></i> SEO & Digital Marketing</li>
+				</ul>
+				<a href="contact.html" class="btn btn-main mt-20">Learn More</a>
+			</div>
+		</div> <!-- End row -->
+	</div> <!-- End container -->
+</section> <!-- End section -->
+		{% include 'team-sub.html'%}
+
+</div>
+{% endblock %}

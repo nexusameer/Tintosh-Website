@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<!-- Mirrored from demo.themefisher.com/bingo-bootstrap/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 May 2024 23:12:22 GMT -->
+
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Tintosh Website</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="One page parallax responsive HTML Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Bingo HTML Template v1.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon1.jpg' %}" />
+
+  <!-- CSS
+  ================================================== -->
+  <!-- Themefisher Icon font -->
+  <link rel="stylesheet" href="{% static 'plugins/themefisher-font/style.css' %}">
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}">
+  <!-- Lightbox.min css -->
+  <link rel="stylesheet" href="{% static 'plugins/lightbox2/css/lightbox.min.css'%}">
+  <!-- animation css -->
+  <link rel="stylesheet" href="{% static 'plugins/animate/animate.css' %}">
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body id="body">
+
+  <!--
+  Start Preloader
+  ==================================== -->
+  <div id="preloader">
+    <div class='preloader'>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!--
+  End Preloader
+  ==================================== -->
+  {% include 'navbar.html'%}
+
+  {% block content %}
+  {% endblock %}
+
+  <footer id="footer" class="bg-one">
+    <div class="top-footer">
+      <div class="container">
+        <div class="row justify-content-around">
+          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+            <h3>about</h3>
+            <p>Welcome to Tintosh Technologies, a beacon of innovation and excellence in the tech industry. With a dedication to pushing boundaries, we transform ideas into cutting-edge
+              solutions. Join us in shaping the future of technology at Tintosh Technologies.</p>
+          </div>
+          <!-- End of .col-sm-3 -->
+
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <ul>
+              <li>
+                <h3>Our Services</h3>
+              </li>
+              <li><a href="{%url 'service' %}">Web Development</a></li>
+              <li><a href="{%url 'service' %}">App Development</a></li>
+              <li><a href="{% url 'service' %}">Ui/Ux Design</a></li>
+              <li><a href="{%url 'service' %}">Graphic Design</a></li>
+              <li><a href="{%url 'service' %}">Web Design</a></li>
+              <li><a href="{%url 'service' %}">Open AI Integrations</a></li>
+              <li><a href="{%url 'service' %}">SEO and Digiital</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+
+          <div class="col-lg-2 col-md-6 mb-5 mb-md-0">
+            <ul>
+              <li>
+                <h3>Quick Links</h3>
+              </li>
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'service' %}">Services</a></li>
+              <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+              <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+
+          <div class="col-lg-3 col-md-6">
+            <ul>
+              <li>
+                <h3>Connect with us Socially</h3>
+              </li>
+              <li><a href="https://www.facebook.com/profile.php?id=61555663412813" target="_blank">Facebook</a></li>
+              <li><a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A99922839&keywords=tintosh%20technologies&origin=RICH_QUERY_SUGGESTION&position=0&searchId=4481460b-7e03-4d96-941a-5c9f1a84e031&sid=c%2CX&spellCorrectionEnabled=false" target="_blank">Linkedin</a></li>
+              <li><a href="https://www.instagram.com/lifeattintosh/" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+
+        </div>
+      </div> <!-- end container -->
+    </div>
+    <!-- <div class="footer-bottom">
+      <h5>&copy; Copyright 2020. All rights reserved.</h5>
+      <h6>Design and Developed by <a href="https://themefisher.com/">Themefisher</a></h6>
+    </div> -->
+  </footer> <!-- end footer -->
+
+
+  <!-- end Footer Area
+  ========================================== -->
+  <!-- 
+      Essential Scripts
+      =====================================-->
+  <!-- Main jQuery -->
+  <script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>
+
+  <!-- Bootstrap4 -->
+  <script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script>
+  <!-- Parallax -->
+  <script src="{% static 'plugins/parallax/jquery.parallax-1.1.3.js' %}"></script>
+  <!-- lightbox -->
+  <script src="{% static 'plugins/lightbox2/js/lightbox.min.js' %}"></script>
+  <!-- Owl Carousel -->
+  <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+  <!-- filter -->
+  <script src="{% static 'plugins/filterizr/jquery.filterizr.min.js' %}"></script>
+  <!-- Smooth Scroll js -->
+  <script src="{% static 'plugins/smooth-scroll/smooth-scroll.min.js' %}"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+
+  <!-- Custom js -->
+  <script src="{% static 'js/script.js'%}"></script>
+
+  <script src="{% static 'js/work.js'%}"></script>
+
+</body>
+
+
+<!-- Mirrored from demo.themefisher.com/bingo-bootstrap/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 May 2024 23:12:31 GMT -->
+
+</html>

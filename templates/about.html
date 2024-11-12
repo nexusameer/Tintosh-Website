@@ -1,0 +1,141 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<div>
+
+<section class="single-page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>About Us</h2>
+				<ol class="breadcrumb header-bradcrumb justify-content-center">
+					<li class="breadcrumb-item"><a href="index-2.html" class="text-white">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">About Us</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="about-shot-info section-sm">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 mt-20">
+				<h2 class="mb-3">We Create Designs<br> and technology</h2>
+				<p>We specialize in crafting innovative designs that seamlessly merge with cutting-edge technology. Our solutions are meticulously tailored to meet the unique needs and aspirations of our clients. Through our expertise and creativity, we bring ideas to life, transforming concepts into impactful realities. With a passion for pushing boundaries, we continuously explore new horizons in design and technology. Together, we embark on a journey of innovation, shaping the future of technology-driven experiences.
+				</p>
+			</div>
+			<div class="col-lg-6 mt-4 mt-lg-0">
+				<img loading="lazy" class="img-fluid" src="{% static 'images/company/company-image.jpg' %}" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="company-mission section-sm bg-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Our Mission</h3>
+				<p>Our mission is to fuel the growth of companies by delivering cutting-edge technology solutions.
+					We achieve this by unlocking access to a network of passionate and experienced engineers and
+					solution providers. Our innovative approaches ensure businesses can harness the full potential
+					of technology to drive their success. By fostering a collaborative environment, we empower our
+					clients with tailored solutions that meet their unique challenges. Our commitment to excellence
+					and continuous improvement guarantees that we stay ahead of industry trends. Together, we
+					transform technological visions into impactful realities.</p>
+				<img loading="lazy" src="images/company/company-image-2.jpg" alt="" class="img-fluid mt-30">
+			</div>
+			<div class="col-md-6 mt-5 mt-md-0">
+				<h3>Our Vision</h3>
+				<p>Our vision is to be the catalyst for transformative technological evolution, driving businesses towards unprecedented growth. We aspire to create a world where innovation knows no bounds, fueled by our dedication to connecting companies with top-tier engineering talent and solution providers. Through our relentless pursuit of excellence, we aim to redefine industry standards and pave the way for groundbreaking advancements. By fostering a culture of collaboration and creativity, we empower organizations to thrive in an ever-changing digital landscape. Together, we envision a future where technology seamlessly integrates with human ingenuity to unlock limitless possibilities.</p>
+				<img loading="lazy" src="images/company/company-image-3.jpg" alt="" class="img-fluid mt-30">
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- <section class="promo-video section-sm">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xl-6 col-lg-8">
+				<div class="title text-center">
+					<h2>Our Promo Video</h2>
+					<p>Vestibulum nisl tortor, consectetur quis imperdiet bibendum, laoreet sed arcu.Sed condimentum iaculis ex,
+						in faucibus lorem accumsan non. Donec mattis tincidunt metus. Morbi sed tortor a risus luctus dignissim.</p>
+					<div class="border"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-md-8 mx-auto">
+				<iframe src="https://player.vimeo.com/video/51119176" width="100%" height="360" frameborder="0"
+					webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<!--
+Start Call To Action
+==================================== -->
+<section class="call-to-action-2 section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h2>There’s no use in pushing boundaries if it’s not for innovation. As a software development company, we make the future a reality today.</h2>
+			</div>
+		</div> 		<!-- End row -->
+	</div>   	<!-- End container -->
+</section>   <!-- End section -->
+
+<!-- <section class="section grallery">
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-xl-6 col-lg-8">
+				<div class="title text-center">
+					<h2>Sneak Peak Gallery</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore numquam esse vitae recusandae qui
+						aspernatur, blanditiis, laboriosam dignissimos dolore facere provident ex? Porro, praesentium consectetur
+						tempore. Nulla, error eius dolorem.</p>
+						<div class="border"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="company-gallery">
+					{% for client in clients %}
+					<img loading="lazy" src="{{client.logo.url}}" alt="">
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+{% include 'team-sub.html' %}
+
+{% include 'counter.html'%}
+
+
+<!--
+Start Call To Action
+==================================== -->
+<section class="call-to-action section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xl-6 col-lg-8 text-center">
+				<h2>Let's Create Something Together</h2>
+				<p>Let's embark on a journey of innovation together. With our expertise and your vision, we'll create groundbreaking technology solutions that drive your success.</p>
+				<a href="{% url 'contact' %}" class="btn btn-main">Contact Us</a>
+			</div>
+		</div> <!-- End row -->
+	</div> <!-- End container -->
+</section> <!-- End section -->
+
+</div>
+{% endblock %}

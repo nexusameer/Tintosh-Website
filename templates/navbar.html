@@ -1,0 +1,71 @@
+{% load static %}
+<!--
+Fixed Navigation
+==================================== -->
+<header class="navigation fixed-top">
+    <div class="container">
+      <!-- main nav -->
+      <nav class="navbar navbar-expand-lg navbar-light px-0">
+        <!-- logo -->
+        <a class="navbar-brand logo" href="{% url 'index' %}">
+          <img loading="lazy" class="logo-default" src="{% static 'images/logo-black.png' %}" alt="logo" />
+          <img loading="lazy" class="logo-white" src="{% static 'images/logo-white.png' %}" alt="logo" />
+        </a>
+        <!-- /logo -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item ">
+              <a class="nav-link" href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="{% url 'about' %}">About Us</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="{% url 'service' %}">Services</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="{% url 'team' %}">Team</a>
+            </li>
+            <!-- <li class="nav-item ">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li> -->
+            <li class="nav-item ">
+              <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown02" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Pages <i class="tf-ion-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown02">
+                <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+                <li><a class="dropdown-item" href="blog.html">Blog Page</a></li>
+                <li><a class="dropdown-item" href="single-post.html">Blog Single Page</a></li>
+                                      
+                <li class="dropdown dropdown-submenu dropleft">
+                  <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0201" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu  <i class="tf-ion-chevron-down"></i></a>
+        
+                  <ul class="dropdown-menu" aria-labelledby="dropdown0201">
+                    <li><a class="dropdown-item" href="index-2.html">Submenu 01</a></li>
+                    <li><a class="dropdown-item" href="index-2.html">Submenu 02</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+      <!-- /main nav -->
+    </div>
+  </header>
+  <!--
+  End Fixed Navigation
+  ==================================== -->
